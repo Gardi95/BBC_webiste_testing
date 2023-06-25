@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230119 03:11:59.869" rpa="false" schemaversion="3">
+<suite id="s1" name="TS BBC 03" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03">
+<suite id="s1-s1" name="TC BBC sig 001" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_001.robot">
+<test id="s1-s1-t1" name="Pre-conditions" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:12:00.016" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:12:00.015" endtime="20230119 03:12:01.863"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:00.015" endtime="20230119 03:12:01.863"/>
+</test>
+<test id="s1-s1-t2" name="Sign_in_1" line="16">
+<kw name="TC_BBC_sig_001">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:12:01.864" endtime="20230119 03:12:01.865"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:12:01.865" endtime="20230119 03:12:02.478"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<arg>mahamadgardi95@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:02.478" level="INFO">Typing text 'mahamadgardi95@gmail.com' into text field '//*[@id="user-identifier-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:02.478" endtime="20230119 03:12:04.085"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>123456789MsY</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:04.086" level="INFO">Typing text '123456789MsY' into text field '//*[@id="password-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:04.085" endtime="20230119 03:12:05.664"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:05.664" level="INFO">Clicking element '//*[@id="submit-button"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:05.664" endtime="20230119 03:12:07.186"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="return-to-ptrt"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:07.186" level="INFO">Clicking element '//*[@id="return-to-ptrt"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:07.186" endtime="20230119 03:12:09.852"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:09.852" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 03:12:09.852" endtime="20230119 03:12:10.890"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="idcta-link"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:10.890" level="INFO">Clicking element '//*[@id="idcta-link"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:10.890" endtime="20230119 03:12:11.924"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="bbccookies-settings"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:11.924" level="INFO">Clicking element '//*[@id="bbccookies-settings"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:11.924" endtime="20230119 03:12:13.438"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:12:14.780" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 03:12:13.438" endtime="20230119 03:12:14.780"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="homepage-link"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:14.781" level="INFO">Clicking element '//*[@id="homepage-link"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:14.780" endtime="20230119 03:12:16.363"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>${Link}</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<msg timestamp="20230119 03:12:17.504" level="INFO">Current page contains link '//*[@id="page"]/section[4]/div/div/div[2]/div/section[1]/h2/a'.</msg>
+<status status="PASS" starttime="20230119 03:12:16.363" endtime="20230119 03:12:17.504"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:01.864" endtime="20230119 03:12:17.504"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:01.864" endtime="20230119 03:12:17.504"/>
+</test>
+<test id="s1-s1-t3" name="Post-condicitions" line="19">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:12:17.505" endtime="20230119 03:12:20.055"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:17.505" endtime="20230119 03:12:20.056"/>
+</test>
+<status status="PASS" starttime="20230119 03:11:59.884" endtime="20230119 03:12:20.056"/>
+</suite>
+<suite id="s1-s2" name="TC BBC sig 002" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_002.robot">
+<test id="s1-s2-t1" name="Pre-conditions" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:12:20.061" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:12:20.061" endtime="20230119 03:12:22.337"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:20.061" endtime="20230119 03:12:22.338"/>
+</test>
+<test id="s1-s2-t2" name="Sign_in_2" line="16">
+<kw name="TC_BBC_sig_002">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:12:22.339" endtime="20230119 03:12:22.339"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:12:22.339" endtime="20230119 03:12:22.954"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<arg>mahamadgardi9564@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:22.954" level="INFO">Typing text 'mahamadgardi9564@gmail.com' into text field '//*[@id="user-identifier-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:22.954" endtime="20230119 03:12:24.562"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>123456789MsY</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:24.563" level="INFO">Typing text '123456789MsY' into text field '//*[@id="password-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:24.562" endtime="20230119 03:12:26.135"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:26.135" level="INFO">Clicking element '//*[@id="submit-button"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:26.135" endtime="20230119 03:12:27.556"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${username}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230119 03:12:28.064" level="INFO">Current page contains element '//*[@id="form-message-general"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:27.556" endtime="20230119 03:12:28.064"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:22.339" endtime="20230119 03:12:28.064"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:22.339" endtime="20230119 03:12:28.064"/>
+</test>
+<test id="s1-s2-t3" name="Post-condicitions" line="19">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:12:28.065" endtime="20230119 03:12:30.607"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:28.065" endtime="20230119 03:12:30.607"/>
+</test>
+<status status="PASS" starttime="20230119 03:12:20.057" endtime="20230119 03:12:30.608"/>
+</suite>
+<suite id="s1-s3" name="TC BBC sig 003" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_003.robot">
+<test id="s1-s3-t1" name="Pre-conditions" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:12:30.613" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:12:30.612" endtime="20230119 03:12:32.896"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:30.612" endtime="20230119 03:12:32.896"/>
+</test>
+<test id="s1-s3-t2" name="Sign_in_3" line="16">
+<kw name="TC_BBC_sig_003">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:12:32.897" endtime="20230119 03:12:32.898"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:12:32.898" endtime="20230119 03:12:33.513"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<arg>mahamadgardi95@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:33.514" level="INFO">Typing text 'mahamadgardi95@gmail.com' into text field '//*[@id="user-identifier-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:33.513" endtime="20230119 03:12:35.118"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>123ghMsY</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:35.118" level="INFO">Typing text '123ghMsY' into text field '//*[@id="password-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:35.118" endtime="20230119 03:12:36.683"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:36.683" level="INFO">Clicking element '//*[@id="submit-button"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:36.683" endtime="20230119 03:12:38.044"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${password}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230119 03:12:38.551" level="INFO">Current page contains element '//*[@id="password-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:38.044" endtime="20230119 03:12:38.551"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:32.897" endtime="20230119 03:12:38.551"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:32.897" endtime="20230119 03:12:38.551"/>
+</test>
+<test id="s1-s3-t3" name="Post-condicitions" line="19">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:12:38.552" endtime="20230119 03:12:41.096"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:38.552" endtime="20230119 03:12:41.096"/>
+</test>
+<status status="PASS" starttime="20230119 03:12:30.609" endtime="20230119 03:12:41.097"/>
+</suite>
+<suite id="s1-s4" name="TC BBC sig 004" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_004.robot">
+<test id="s1-s4-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:12:41.102" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:12:41.102" endtime="20230119 03:12:43.289"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:41.102" endtime="20230119 03:12:43.289"/>
+</test>
+<test id="s1-s4-t2" name="Sign_in_4" line="15">
+<kw name="TC_BBC_sig_004">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:12:43.292" endtime="20230119 03:12:43.292"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:12:43.292" endtime="20230119 03:12:43.918"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="password-input"]</arg>
+<arg>123456789MsY</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:43.918" level="INFO">Typing text '123456789MsY' into text field '//*[@id="password-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:43.918" endtime="20230119 03:12:45.507"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:45.507" level="INFO">Clicking element '//*[@id="submit-button"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:45.507" endtime="20230119 03:12:46.880"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Something's missing. Please check and try again.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:12:47.893" level="INFO">Current page contains text 'Something's missing. Please check and try again.'.</msg>
+<status status="PASS" starttime="20230119 03:12:46.880" endtime="20230119 03:12:47.893"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Sorry, those details don't match. Check you've typed them correctly.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:12:48.903" level="INFO">Current page contains text 'Sorry, those details don't match. Check you've typed them correctly.'.</msg>
+<status status="PASS" starttime="20230119 03:12:47.893" endtime="20230119 03:12:48.903"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:43.291" endtime="20230119 03:12:48.903"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:43.291" endtime="20230119 03:12:48.903"/>
+</test>
+<test id="s1-s4-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:12:48.905" endtime="20230119 03:12:51.447"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:48.904" endtime="20230119 03:12:51.447"/>
+</test>
+<status status="PASS" starttime="20230119 03:12:41.098" endtime="20230119 03:12:51.448"/>
+</suite>
+<suite id="s1-s5" name="TC BBC sig 005" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_005.robot">
+<test id="s1-s5-t1" name="Pre-conditions" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:12:51.453" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:12:51.453" endtime="20230119 03:12:53.702"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:51.452" endtime="20230119 03:12:53.702"/>
+</test>
+<test id="s1-s5-t2" name="Sign_in_5" line="16">
+<kw name="TC_BBC_sig_005">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:12:53.704" endtime="20230119 03:12:53.704"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:12:53.704" endtime="20230119 03:12:54.324"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<arg>mahamadgardi95@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:54.325" level="INFO">Typing text 'mahamadgardi95@gmail.com' into text field '//*[@id="user-identifier-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:54.324" endtime="20230119 03:12:55.929"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:12:55.929" level="INFO">Clicking element '//*[@id="submit-button"]'.</msg>
+<status status="PASS" starttime="20230119 03:12:55.929" endtime="20230119 03:12:57.224"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Something's missing. Please check and try again.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:12:58.236" level="INFO">Current page contains text 'Something's missing. Please check and try again.'.</msg>
+<status status="PASS" starttime="20230119 03:12:57.224" endtime="20230119 03:12:58.236"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Sorry, those details don't match. Check you've typed them correctly.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:12:59.246" level="INFO">Current page contains text 'Sorry, those details don't match. Check you've typed them correctly.'.</msg>
+<status status="PASS" starttime="20230119 03:12:58.236" endtime="20230119 03:12:59.246"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:53.704" endtime="20230119 03:12:59.246"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:53.703" endtime="20230119 03:12:59.246"/>
+</test>
+<test id="s1-s5-t3" name="Post-condicitions" line="19">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:12:59.247" endtime="20230119 03:13:01.792"/>
+</kw>
+<status status="PASS" starttime="20230119 03:12:59.246" endtime="20230119 03:13:01.793"/>
+</test>
+<status status="PASS" starttime="20230119 03:12:51.449" endtime="20230119 03:13:01.793"/>
+</suite>
+<suite id="s1-s6" name="TC BBC sig 006" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_006.robot">
+<test id="s1-s6-t1" name="Pre-conditions" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:13:01.798" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:13:01.798" endtime="20230119 03:13:04.146"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:01.798" endtime="20230119 03:13:04.146"/>
+</test>
+<test id="s1-s6-t2" name="Sign_in_6" line="16">
+<kw name="TC_BBC_sig_006">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:13:04.148" endtime="20230119 03:13:04.148"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:13:04.148" endtime="20230119 03:13:04.775"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:04.775" level="INFO">Clicking element '//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:04.775" endtime="20230119 03:13:05.814"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Register with the BBC</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:06.826" level="INFO">Current page contains text 'Register with the BBC'.</msg>
+<status status="PASS" starttime="20230119 03:13:05.814" endtime="20230119 03:13:06.826"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:06.826" level="INFO">Clicking element '//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:06.826" endtime="20230119 03:13:07.860"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Need help signing in?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:08.870" level="INFO">Current page contains text 'Need help signing in?'.</msg>
+<status status="PASS" starttime="20230119 03:13:07.860" endtime="20230119 03:13:08.870"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<arg>mahamadgardi95@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:08.870" level="INFO">Typing text 'mahamadgardi95@gmail.com' into text field '//*[@id="user-identifier-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:13:08.870" endtime="20230119 03:13:10.464"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:10.464" level="INFO">Clicking element '//*[@id="submit-button"]'.</msg>
+<status status="PASS" starttime="20230119 03:13:10.464" endtime="20230119 03:13:12.192"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>What's your email address?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:13.203" level="INFO">Current page contains text 'What's your email address?'.</msg>
+<status status="PASS" starttime="20230119 03:13:12.192" endtime="20230119 03:13:13.203"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:04.147" endtime="20230119 03:13:13.203"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:04.147" endtime="20230119 03:13:13.203"/>
+</test>
+<test id="s1-s6-t3" name="Post-condicitions" line="19">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:13:13.204" endtime="20230119 03:13:15.749"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:13.204" endtime="20230119 03:13:15.750"/>
+</test>
+<status status="PASS" starttime="20230119 03:13:01.794" endtime="20230119 03:13:15.750"/>
+</suite>
+<suite id="s1-s7" name="TC BBC sig 007" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_007.robot">
+<test id="s1-s7-t1" name="Pre-conditions" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:13:15.756" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:13:15.756" endtime="20230119 03:13:17.981"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:15.755" endtime="20230119 03:13:17.981"/>
+</test>
+<test id="s1-s7-t2" name="Sign_in_7" line="16">
+<kw name="TC_BBC_sig_007">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:13:17.985" endtime="20230119 03:13:17.985"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:13:17.985" endtime="20230119 03:13:18.604"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:18.604" level="INFO">Clicking element '//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:18.604" endtime="20230119 03:13:19.643"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Register with the BBC</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:20.654" level="INFO">Current page contains text 'Register with the BBC'.</msg>
+<status status="PASS" starttime="20230119 03:13:19.643" endtime="20230119 03:13:20.654"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:20.654" level="INFO">Clicking element '//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:20.654" endtime="20230119 03:13:21.685"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Need help signing in?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:22.698" level="INFO">Current page contains text 'Need help signing in?'.</msg>
+<status status="PASS" starttime="20230119 03:13:21.685" endtime="20230119 03:13:22.698"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<arg>mahamadgardi9564</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:22.698" level="INFO">Typing text 'mahamadgardi9564' into text field '//*[@id="user-identifier-input"]'.</msg>
+<status status="PASS" starttime="20230119 03:13:22.698" endtime="20230119 03:13:24.280"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:24.280" level="INFO">Clicking element '//*[@id="submit-button"]'.</msg>
+<status status="PASS" starttime="20230119 03:13:24.280" endtime="20230119 03:13:25.315"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>What's your email address?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:26.327" level="INFO">Current page contains text 'What's your email address?'.</msg>
+<status status="PASS" starttime="20230119 03:13:25.315" endtime="20230119 03:13:26.327"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:17.984" endtime="20230119 03:13:26.327"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:17.983" endtime="20230119 03:13:26.327"/>
+</test>
+<test id="s1-s7-t3" name="Post-condicitions" line="19">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:13:26.328" endtime="20230119 03:13:28.863"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:26.328" endtime="20230119 03:13:28.864"/>
+</test>
+<status status="PASS" starttime="20230119 03:13:15.751" endtime="20230119 03:13:28.865"/>
+</suite>
+<suite id="s1-s8" name="TC BBC sig 008" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_008.robot">
+<test id="s1-s8-t1" name="Pre-conditions" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:13:28.870" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:13:28.870" endtime="20230119 03:13:31.122"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:28.869" endtime="20230119 03:13:31.122"/>
+</test>
+<test id="s1-s8-t2" name="Sign_in_8" line="11">
+<kw name="TC_BBC_sig_008">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:13:31.124" endtime="20230119 03:13:31.124"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:13:31.124" endtime="20230119 03:13:31.748"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:31.748" level="INFO">Clicking element '//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:31.748" endtime="20230119 03:13:32.786"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:32.786" level="INFO">Clicking element '//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:32.786" endtime="20230119 03:13:33.816"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:33.817" level="INFO">Clicking element '//*[@id="submit-button"]'.</msg>
+<status status="PASS" starttime="20230119 03:13:33.816" endtime="20230119 03:13:35.150"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Something's missing. Please check and try again.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:36.161" level="INFO">Current page contains text 'Something's missing. Please check and try again.'.</msg>
+<status status="PASS" starttime="20230119 03:13:35.150" endtime="20230119 03:13:36.161"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:31.124" endtime="20230119 03:13:36.161"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:31.123" endtime="20230119 03:13:36.161"/>
+</test>
+<test id="s1-s8-t3" name="Post-condicitions" line="14">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:13:36.163" endtime="20230119 03:13:38.698"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:36.163" endtime="20230119 03:13:38.699"/>
+</test>
+<status status="PASS" starttime="20230119 03:13:28.866" endtime="20230119 03:13:38.700"/>
+</suite>
+<suite id="s1-s9" name="TC BBC sig 009" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_009.robot">
+<test id="s1-s9-t1" name="Pre-conditions" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:13:38.705" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:13:38.704" endtime="20230119 03:13:40.918"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:38.704" endtime="20230119 03:13:40.919"/>
+</test>
+<test id="s1-s9-t2" name="Sign_in_9" line="11">
+<kw name="TC_BBC_sig_009">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:13:40.920" endtime="20230119 03:13:40.920"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:13:40.920" endtime="20230119 03:13:41.541"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:41.541" level="INFO">Clicking element '//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:41.541" endtime="20230119 03:13:42.579"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Register with the BBC</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:43.590" level="INFO">Current page contains text 'Register with the BBC'.</msg>
+<status status="PASS" starttime="20230119 03:13:42.579" endtime="20230119 03:13:43.590"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:43.590" level="INFO">Clicking element '//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:43.590" endtime="20230119 03:13:44.624"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Register with the BBC</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:45.634" level="INFO">Current page contains text 'Register with the BBC'.</msg>
+<status status="PASS" starttime="20230119 03:13:44.624" endtime="20230119 03:13:45.634"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[2]/div/div/div[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:45.634" level="INFO">Clicking element '//*[@id="container"]/div/div[2]/div/div/div[2]/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:45.634" endtime="20230119 03:13:46.666"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Sorry, unless you can remember it you'll have to register for a new account. On the plus side, it only takes a minute.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:47.813" level="INFO">Current page contains text 'Sorry, unless you can remember it you'll have to register for a new account. On the plus side, it only takes a minute.'.</msg>
+<status status="PASS" starttime="20230119 03:13:46.666" endtime="20230119 03:13:47.813"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:40.920" endtime="20230119 03:13:47.813"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:40.920" endtime="20230119 03:13:47.814"/>
+</test>
+<test id="s1-s9-t3" name="Post-condicitions" line="14">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:13:47.815" endtime="20230119 03:13:50.362"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:47.815" endtime="20230119 03:13:50.362"/>
+</test>
+<status status="PASS" starttime="20230119 03:13:38.701" endtime="20230119 03:13:50.363"/>
+</suite>
+<suite id="s1-s10" name="TC BBC sig 010" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_03\TC_BBC_sig_010.robot">
+<test id="s1-s10-t1" name="Pre-conditions" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 03:13:50.368" level="INFO">Opening browser 'chrome' to base url 'https://account.bbc.com/signin?realm=%2F&amp;clientId=Account&amp;context=homepage&amp;ptrt=https%3A%2F%2Fwww.bbc.com%2F&amp;userOrigin=HOMEPAGE_GNL&amp;isCasso=false&amp;action=sign-in&amp;redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&amp;service=IdSignInService&amp;nonce=pWZsJkSN-anBwFcnbByn2Rc3eG6v4Xglh6K8'.</msg>
+<status status="PASS" starttime="20230119 03:13:50.368" endtime="20230119 03:13:52.592"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:50.368" endtime="20230119 03:13:52.592"/>
+</test>
+<test id="s1-s10-t2" name="Sign_in_10" line="11">
+<kw name="TC_BBC_sig_010">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 03:13:52.594" endtime="20230119 03:13:52.594"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 03:13:52.594" endtime="20230119 03:13:53.215"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:53.215" level="INFO">Clicking element '//*[@id="signin-page"]/div[2]/div/div[1]/div[2]/form/p/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:53.215" endtime="20230119 03:13:54.256"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Register with the BBC</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:55.267" level="INFO">Current page contains text 'Register with the BBC'.</msg>
+<status status="PASS" starttime="20230119 03:13:54.256" endtime="20230119 03:13:55.267"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:55.268" level="INFO">Clicking element '//*[@id="container"]/div/div[2]/div/div/div[2]/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:55.267" endtime="20230119 03:13:56.300"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Help signing in</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:57.748" level="INFO">Current page contains text 'Help signing in'.</msg>
+<status status="PASS" starttime="20230119 03:13:56.300" endtime="20230119 03:13:57.748"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="bbccookies-settings"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:57.748" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 03:13:57.748" endtime="20230119 03:13:58.779"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:13:59.826" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 03:13:58.779" endtime="20230119 03:13:59.826"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="homepage-link"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:13:59.826" level="INFO">Clicking element '//*[@id="homepage-link"]'.</msg>
+<status status="PASS" starttime="20230119 03:13:59.826" endtime="20230119 03:14:01.989"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 03:14:01.990" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 03:14:01.989" endtime="20230119 03:14:03.027"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Welcome to BBC.com</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 03:14:04.040" level="INFO">Current page contains text 'Welcome to BBC.com'.</msg>
+<status status="PASS" starttime="20230119 03:14:03.027" endtime="20230119 03:14:04.040"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:52.594" endtime="20230119 03:14:04.040"/>
+</kw>
+<status status="PASS" starttime="20230119 03:13:52.594" endtime="20230119 03:14:04.040"/>
+</test>
+<test id="s1-s10-t3" name="Post-condicitions" line="14">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 03:14:04.041" endtime="20230119 03:14:06.578"/>
+</kw>
+<status status="PASS" starttime="20230119 03:14:04.041" endtime="20230119 03:14:06.578"/>
+</test>
+<status status="PASS" starttime="20230119 03:13:50.364" endtime="20230119 03:14:06.579"/>
+</suite>
+<status status="PASS" starttime="20230119 03:11:59.870" endtime="20230119 03:14:06.580"/>
+</suite>
+<statistics>
+<total>
+<stat pass="30" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="30" fail="0" skip="0" id="s1" name="TS BBC 03">TS BBC 03</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="TC BBC sig 001">TS BBC 03.TC BBC sig 001</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s2" name="TC BBC sig 002">TS BBC 03.TC BBC sig 002</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s3" name="TC BBC sig 003">TS BBC 03.TC BBC sig 003</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s4" name="TC BBC sig 004">TS BBC 03.TC BBC sig 004</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s5" name="TC BBC sig 005">TS BBC 03.TC BBC sig 005</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s6" name="TC BBC sig 006">TS BBC 03.TC BBC sig 006</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s7" name="TC BBC sig 007">TS BBC 03.TC BBC sig 007</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s8" name="TC BBC sig 008">TS BBC 03.TC BBC sig 008</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s9" name="TC BBC sig 009">TS BBC 03.TC BBC sig 009</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s10" name="TC BBC sig 010">TS BBC 03.TC BBC sig 010</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

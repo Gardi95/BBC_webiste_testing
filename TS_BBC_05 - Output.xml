@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230119 10:29:31.764" rpa="false" schemaversion="3">
+<suite id="s1" name="TS BBC 05" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05">
+<suite id="s1-s1" name="TC BBC N Men 001" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_001.robot">
+<test id="s1-s1-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:29:31.922" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:29:31.922" endtime="20230119 10:29:34.235"/>
+</kw>
+<status status="PASS" starttime="20230119 10:29:31.921" endtime="20230119 10:29:34.236"/>
+</test>
+<test id="s1-s1-t2" name="News_Menu_1" line="15">
+<kw name="TC_BBC_N_Men_001">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:29:34.237" endtime="20230119 10:29:34.237"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:29:34.237" endtime="20230119 10:29:34.868"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 10:29:36.868" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 10:29:34.868" endtime="20230119 10:29:36.868"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:29:36.868" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:29:36.868" endtime="20230119 10:29:37.925"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:29:37.925" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:29:37.925" endtime="20230119 10:29:38.960"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:29:40.820" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:29:38.960" endtime="20230119 10:29:40.820"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:29:40.820" endtime="20230119 10:29:42.037"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Home}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:29:42.037" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230119 10:29:42.037" endtime="20230119 10:29:44.079"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Must see</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:29:45.107" level="INFO">Current page contains text 'Must see'.</msg>
+<status status="PASS" starttime="20230119 10:29:44.079" endtime="20230119 10:29:45.107"/>
+</kw>
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>${button}</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20230119 10:29:47.725" level="INFO">Current page contains button '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[15]/span/button'.</msg>
+<status status="PASS" starttime="20230119 10:29:45.107" endtime="20230119 10:29:47.725"/>
+</kw>
+<status status="PASS" starttime="20230119 10:29:34.237" endtime="20230119 10:29:47.725"/>
+</kw>
+<status status="PASS" starttime="20230119 10:29:34.236" endtime="20230119 10:29:47.725"/>
+</test>
+<test id="s1-s1-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:29:47.726" endtime="20230119 10:29:50.276"/>
+</kw>
+<status status="PASS" starttime="20230119 10:29:47.726" endtime="20230119 10:29:50.276"/>
+</test>
+<status status="PASS" starttime="20230119 10:29:31.782" endtime="20230119 10:29:50.277"/>
+</suite>
+<suite id="s1-s2" name="TC BBC N Men 002" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_002.robot">
+<test id="s1-s2-t1" name="Pre-conditions" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:29:50.283" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:29:50.283" endtime="20230119 10:29:52.980"/>
+</kw>
+<status status="PASS" starttime="20230119 10:29:50.283" endtime="20230119 10:29:52.980"/>
+</test>
+<test id="s1-s2-t2" name="News_Menu_2" line="16">
+<kw name="TC_BBC_N_Men_002">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:29:52.981" endtime="20230119 10:29:52.981"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:29:52.981" endtime="20230119 10:29:53.603"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:29:53.603" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:29:53.603" endtime="20230119 10:29:54.657"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:29:54.657" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:29:54.657" endtime="20230119 10:29:55.698"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:29:56.952" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:29:55.698" endtime="20230119 10:29:56.952"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:29:56.952" endtime="20230119 10:29:58.192"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${War_in_Ukraine}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:29:58.192" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230119 10:29:58.192" endtime="20230119 10:30:00.349"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${title}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230119 10:30:00.871" level="INFO">Current page contains element '//*[@id="nw-c-Thewarexplained__title"]'.</msg>
+<status status="PASS" starttime="20230119 10:30:00.349" endtime="20230119 10:30:00.871"/>
+</kw>
+<status status="PASS" starttime="20230119 10:29:52.981" endtime="20230119 10:30:00.871"/>
+</kw>
+<status status="PASS" starttime="20230119 10:29:52.980" endtime="20230119 10:30:00.871"/>
+</test>
+<test id="s1-s2-t3" name="Post-condicitions" line="19">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:30:00.872" endtime="20230119 10:30:03.420"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:00.872" endtime="20230119 10:30:03.420"/>
+</test>
+<status status="PASS" starttime="20230119 10:29:50.278" endtime="20230119 10:30:03.423"/>
+</suite>
+<suite id="s1-s3" name="TC BBC N Men 003" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_003.robot">
+<test id="s1-s3-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:30:03.429" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:30:03.428" endtime="20230119 10:30:06.064"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:03.428" endtime="20230119 10:30:06.064"/>
+</test>
+<test id="s1-s3-t2" name="News_Menu_3" line="15">
+<kw name="TC_BBC_N_Men_003">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:30:06.066" endtime="20230119 10:30:06.066"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:30:06.066" endtime="20230119 10:30:06.689"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:06.690" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:30:06.689" endtime="20230119 10:30:07.753"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:07.753" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:30:07.753" endtime="20230119 10:30:08.788"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:30:10.140" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:30:08.788" endtime="20230119 10:30:10.140"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:30:10.140" endtime="20230119 10:30:11.248"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Coronavirus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:11.248" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[4]'.</msg>
+<status status="PASS" starttime="20230119 10:30:11.248" endtime="20230119 10:30:13.139"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Latest Updates</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:30:14.242" level="INFO">Current page contains text 'Latest Updates'.</msg>
+<status status="PASS" starttime="20230119 10:30:13.139" endtime="20230119 10:30:14.242"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:06.065" endtime="20230119 10:30:14.242"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:06.065" endtime="20230119 10:30:14.242"/>
+</test>
+<test id="s1-s3-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:30:14.245" endtime="20230119 10:30:16.801"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:14.244" endtime="20230119 10:30:16.801"/>
+</test>
+<status status="PASS" starttime="20230119 10:30:03.424" endtime="20230119 10:30:16.803"/>
+</suite>
+<suite id="s1-s4" name="TC BBC N Men 004" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_004.robot">
+<test id="s1-s4-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:30:16.808" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:30:16.808" endtime="20230119 10:30:19.443"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:16.808" endtime="20230119 10:30:19.443"/>
+</test>
+<test id="s1-s4-t2" name="News_Menu_4" line="15">
+<kw name="TC_BBC_N_Men_004">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:30:19.444" endtime="20230119 10:30:19.444"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:30:19.445" endtime="20230119 10:30:20.072"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:20.072" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:30:20.072" endtime="20230119 10:30:21.134"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:21.135" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:30:21.134" endtime="20230119 10:30:22.170"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:30:23.502" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:30:22.170" endtime="20230119 10:30:23.502"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:30:23.502" endtime="20230119 10:30:24.898"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Clim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:24.898" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[4]'.</msg>
+<status status="PASS" starttime="20230119 10:30:24.898" endtime="20230119 10:30:26.907"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Latest Updates</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:30:27.948" level="INFO">Current page contains text 'Latest Updates'.</msg>
+<status status="PASS" starttime="20230119 10:30:26.907" endtime="20230119 10:30:27.948"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:19.444" endtime="20230119 10:30:27.948"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:19.444" endtime="20230119 10:30:27.948"/>
+</test>
+<test id="s1-s4-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:30:27.949" endtime="20230119 10:30:30.505"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:27.949" endtime="20230119 10:30:30.505"/>
+</test>
+<status status="PASS" starttime="20230119 10:30:16.804" endtime="20230119 10:30:30.506"/>
+</suite>
+<suite id="s1-s5" name="TC BBC N Men 005" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_005.robot">
+<test id="s1-s5-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:30:30.512" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:30:30.511" endtime="20230119 10:30:33.239"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:30.511" endtime="20230119 10:30:33.239"/>
+</test>
+<test id="s1-s5-t2" name="News_Menu_5" line="15">
+<kw name="TC_BBC_N_Men_005">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:30:33.240" endtime="20230119 10:30:33.240"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:30:33.241" endtime="20230119 10:30:33.861"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:33.861" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:30:33.861" endtime="20230119 10:30:34.910"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:34.910" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:30:34.910" endtime="20230119 10:30:35.951"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:30:37.339" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:30:35.951" endtime="20230119 10:30:37.339"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:30:37.339" endtime="20230119 10:30:38.440"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Video}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:38.440" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[5]'.</msg>
+<status status="PASS" starttime="20230119 10:30:38.440" endtime="20230119 10:30:40.303"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Editor's recommendations</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:30:41.318" level="INFO">Current page contains text 'Editor's recommendations'.</msg>
+<status status="PASS" starttime="20230119 10:30:40.303" endtime="20230119 10:30:41.318"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:33.240" endtime="20230119 10:30:41.318"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:33.240" endtime="20230119 10:30:41.319"/>
+</test>
+<test id="s1-s5-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:30:41.320" endtime="20230119 10:30:43.876"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:41.319" endtime="20230119 10:30:43.877"/>
+</test>
+<status status="PASS" starttime="20230119 10:30:30.507" endtime="20230119 10:30:43.878"/>
+</suite>
+<suite id="s1-s6" name="TC BBC N Men 006" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_006.robot">
+<test id="s1-s6-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:30:43.884" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:30:43.884" endtime="20230119 10:30:46.520"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:43.883" endtime="20230119 10:30:46.520"/>
+</test>
+<test id="s1-s6-t2" name="News_Menu_6" line="15">
+<kw name="TC_BBC_N_Men_006">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:30:46.522" endtime="20230119 10:30:46.522"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:30:46.522" endtime="20230119 10:30:47.138"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 10:30:49.138" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 10:30:47.138" endtime="20230119 10:30:49.138"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:49.138" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:30:49.138" endtime="20230119 10:30:50.191"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:50.191" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:30:50.191" endtime="20230119 10:30:51.226"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:30:52.460" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:30:51.226" endtime="20230119 10:30:52.460"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:30:52.460" endtime="20230119 10:30:53.584"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${World}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:30:53.584" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[6]'.</msg>
+<status status="PASS" starttime="20230119 10:30:53.584" endtime="20230119 10:30:55.617"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Watch/Listen</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:30:56.661" level="INFO">Current page contains text 'Watch/Listen'.</msg>
+<status status="PASS" starttime="20230119 10:30:55.617" endtime="20230119 10:30:56.661"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:46.521" endtime="20230119 10:30:56.661"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:46.521" endtime="20230119 10:30:56.661"/>
+</test>
+<test id="s1-s6-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:30:56.662" endtime="20230119 10:30:59.212"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:56.662" endtime="20230119 10:30:59.213"/>
+</test>
+<status status="PASS" starttime="20230119 10:30:43.880" endtime="20230119 10:30:59.216"/>
+</suite>
+<suite id="s1-s7" name="TC BBC N Men 007" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_007.robot">
+<test id="s1-s7-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:30:59.223" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:30:59.222" endtime="20230119 10:31:01.739"/>
+</kw>
+<status status="PASS" starttime="20230119 10:30:59.222" endtime="20230119 10:31:01.739"/>
+</test>
+<test id="s1-s7-t2" name="News_Menu_7" line="15">
+<kw name="TC_BBC_N_Men_007">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:31:01.741" endtime="20230119 10:31:01.741"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:31:01.741" endtime="20230119 10:31:02.361"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230119 10:31:04.361" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230119 10:31:02.361" endtime="20230119 10:31:04.361"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:04.361" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:31:04.361" endtime="20230119 10:31:05.413"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:05.413" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:31:05.413" endtime="20230119 10:31:06.448"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:31:07.751" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:31:06.448" endtime="20230119 10:31:07.751"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:31:07.751" endtime="20230119 10:31:08.959"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20230119 10:31:08.959" endtime="20230119 10:31:09.473"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${UK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:09.473" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[7]'.</msg>
+<status status="PASS" starttime="20230119 10:31:09.473" endtime="20230119 10:31:11.809"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Features and analysis</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:31:12.840" level="INFO">Current page contains text 'Features and analysis'.</msg>
+<status status="PASS" starttime="20230119 10:31:11.809" endtime="20230119 10:31:12.840"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:01.740" endtime="20230119 10:31:12.840"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:01.740" endtime="20230119 10:31:12.840"/>
+</test>
+<test id="s1-s7-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:31:12.841" endtime="20230119 10:31:15.396"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:12.841" endtime="20230119 10:31:15.397"/>
+</test>
+<status status="PASS" starttime="20230119 10:30:59.217" endtime="20230119 10:31:15.399"/>
+</suite>
+<suite id="s1-s8" name="TC BBC N Men 008" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_008.robot">
+<test id="s1-s8-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:31:15.405" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:31:15.404" endtime="20230119 10:31:18.130"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:15.404" endtime="20230119 10:31:18.130"/>
+</test>
+<test id="s1-s8-t2" name="News_Menu_8" line="15">
+<kw name="TC_BBC_N_Men_008">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:31:18.133" endtime="20230119 10:31:18.134"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:31:18.134" endtime="20230119 10:31:18.760"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:18.761" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:31:18.760" endtime="20230119 10:31:19.812"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:19.812" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:31:19.812" endtime="20230119 10:31:20.851"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:31:22.062" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:31:20.851" endtime="20230119 10:31:22.062"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:31:22.062" endtime="20230119 10:31:23.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Business}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:23.170" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[8]'.</msg>
+<status status="PASS" starttime="20230119 10:31:23.170" endtime="20230119 10:31:25.085"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Features &amp; Analysis</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:31:26.186" level="INFO">Current page contains text 'Features &amp; Analysis'.</msg>
+<status status="PASS" starttime="20230119 10:31:25.085" endtime="20230119 10:31:26.186"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:18.133" endtime="20230119 10:31:26.186"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:18.133" endtime="20230119 10:31:26.186"/>
+</test>
+<test id="s1-s8-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:31:26.187" endtime="20230119 10:31:28.741"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:26.187" endtime="20230119 10:31:28.742"/>
+</test>
+<status status="PASS" starttime="20230119 10:31:15.399" endtime="20230119 10:31:28.743"/>
+</suite>
+<suite id="s1-s9" name="TC BBC N Men 009" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_009.robot">
+<test id="s1-s9-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:31:28.749" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:31:28.749" endtime="20230119 10:31:31.431"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:28.748" endtime="20230119 10:31:31.431"/>
+</test>
+<test id="s1-s9-t2" name="News_Menu_9" line="15">
+<kw name="TC_BBC_N_Men_009">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:31:31.433" endtime="20230119 10:31:31.433"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:31:31.433" endtime="20230119 10:31:32.058"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:32.058" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:31:32.058" endtime="20230119 10:31:33.112"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:33.112" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:31:33.112" endtime="20230119 10:31:34.147"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:31:35.480" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:31:34.147" endtime="20230119 10:31:35.480"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:31:35.480" endtime="20230119 10:31:36.663"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Tech}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:36.663" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[9]'.</msg>
+<status status="PASS" starttime="20230119 10:31:36.663" endtime="20230119 10:31:38.771"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Tech</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:31:39.834" level="INFO">Current page contains text 'Tech'.</msg>
+<status status="PASS" starttime="20230119 10:31:38.771" endtime="20230119 10:31:39.834"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:31.433" endtime="20230119 10:31:39.834"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:31.433" endtime="20230119 10:31:39.834"/>
+</test>
+<test id="s1-s9-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:31:39.835" endtime="20230119 10:31:42.390"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:39.835" endtime="20230119 10:31:42.390"/>
+</test>
+<status status="PASS" starttime="20230119 10:31:28.743" endtime="20230119 10:31:42.392"/>
+</suite>
+<suite id="s1-s10" name="TC BBC N Men 010" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_010.robot">
+<test id="s1-s10-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:31:42.398" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:31:42.397" endtime="20230119 10:31:45.772"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:42.397" endtime="20230119 10:31:45.772"/>
+</test>
+<test id="s1-s10-t2" name="News_Menu_10" line="15">
+<kw name="TC_BBC_N_Men_010">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:31:45.774" endtime="20230119 10:31:45.774"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:31:45.774" endtime="20230119 10:31:46.392"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:46.392" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:31:46.392" endtime="20230119 10:31:47.443"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:47.443" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:31:47.443" endtime="20230119 10:31:48.479"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:31:49.673" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:31:48.479" endtime="20230119 10:31:49.673"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:31:49.673" endtime="20230119 10:31:50.862"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Science}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:31:50.862" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[10]'.</msg>
+<status status="PASS" starttime="20230119 10:31:50.862" endtime="20230119 10:31:52.937"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Climate Change</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:31:53.968" level="INFO">Current page contains text 'Climate Change'.</msg>
+<status status="PASS" starttime="20230119 10:31:52.937" endtime="20230119 10:31:53.969"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:45.773" endtime="20230119 10:31:53.969"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:45.773" endtime="20230119 10:31:53.969"/>
+</test>
+<test id="s1-s10-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:31:53.970" endtime="20230119 10:31:56.520"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:53.970" endtime="20230119 10:31:56.520"/>
+</test>
+<status status="PASS" starttime="20230119 10:31:42.393" endtime="20230119 10:31:56.521"/>
+</suite>
+<suite id="s1-s11" name="TC BBC N Men 011" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_011.robot">
+<test id="s1-s11-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:31:56.526" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:31:56.526" endtime="20230119 10:31:59.454"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:56.526" endtime="20230119 10:31:59.454"/>
+</test>
+<test id="s1-s11-t2" name="News_Menu_11" line="15">
+<kw name="TC_BBC_N_Men_011">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:31:59.455" endtime="20230119 10:31:59.455"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:31:59.455" endtime="20230119 10:32:00.084"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:00.085" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:32:00.084" endtime="20230119 10:32:01.132"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:01.133" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:32:01.132" endtime="20230119 10:32:02.172"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:32:03.421" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:32:02.172" endtime="20230119 10:32:03.421"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:32:03.421" endtime="20230119 10:32:04.647"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Stories}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:04.647" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[11]'.</msg>
+<status status="PASS" starttime="20230119 10:32:04.647" endtime="20230119 10:32:06.602"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Long Reads</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:32:07.629" level="INFO">Current page contains text 'Long Reads'.</msg>
+<status status="PASS" starttime="20230119 10:32:06.602" endtime="20230119 10:32:07.629"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:59.455" endtime="20230119 10:32:07.629"/>
+</kw>
+<status status="PASS" starttime="20230119 10:31:59.455" endtime="20230119 10:32:07.629"/>
+</test>
+<test id="s1-s11-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:32:07.630" endtime="20230119 10:32:10.173"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:07.629" endtime="20230119 10:32:10.174"/>
+</test>
+<status status="PASS" starttime="20230119 10:31:56.522" endtime="20230119 10:32:10.175"/>
+</suite>
+<suite id="s1-s12" name="TC BBC N Men 012" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_012.robot">
+<test id="s1-s12-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:32:10.180" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:32:10.180" endtime="20230119 10:32:12.690"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:10.179" endtime="20230119 10:32:12.690"/>
+</test>
+<test id="s1-s12-t2" name="News_Menu_12" line="15">
+<kw name="TC_BBC_N_Men_012">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:32:12.692" endtime="20230119 10:32:12.692"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:32:12.692" endtime="20230119 10:32:13.318"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:13.319" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:32:13.318" endtime="20230119 10:32:14.369"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:14.370" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:32:14.369" endtime="20230119 10:32:15.406"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:32:16.801" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:32:15.406" endtime="20230119 10:32:16.801"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:32:16.801" endtime="20230119 10:32:17.938"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Entertainment_&amp;_Arts}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:17.939" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[12]'.</msg>
+<status status="PASS" starttime="20230119 10:32:17.938" endtime="20230119 10:32:19.924"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Around the BBC</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:32:20.970" level="INFO">Current page contains text 'Around the BBC'.</msg>
+<status status="PASS" starttime="20230119 10:32:19.924" endtime="20230119 10:32:20.970"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:12.691" endtime="20230119 10:32:20.970"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:12.691" endtime="20230119 10:32:20.970"/>
+</test>
+<test id="s1-s12-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:32:20.972" endtime="20230119 10:32:23.516"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:20.970" endtime="20230119 10:32:23.517"/>
+</test>
+<status status="PASS" starttime="20230119 10:32:10.176" endtime="20230119 10:32:23.518"/>
+</suite>
+<suite id="s1-s13" name="TC BBC N Men 013" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_013.robot">
+<test id="s1-s13-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:32:23.523" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:32:23.522" endtime="20230119 10:32:26.226"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:23.522" endtime="20230119 10:32:26.226"/>
+</test>
+<test id="s1-s13-t2" name="News_Menu_13" line="15">
+<kw name="TC_BBC_N_Men_013">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:32:26.227" endtime="20230119 10:32:26.227"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:32:26.227" endtime="20230119 10:32:26.856"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:26.856" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:32:26.856" endtime="20230119 10:32:27.906"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:27.906" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:32:27.906" endtime="20230119 10:32:28.942"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:32:30.289" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:32:28.942" endtime="20230119 10:32:30.289"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:32:30.289" endtime="20230119 10:32:31.496"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Health}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:31.497" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[13]'.</msg>
+<status status="PASS" starttime="20230119 10:32:31.496" endtime="20230119 10:32:33.601"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Find us here</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:32:34.643" level="INFO">Current page contains text 'Find us here'.</msg>
+<status status="PASS" starttime="20230119 10:32:33.601" endtime="20230119 10:32:34.643"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:26.227" endtime="20230119 10:32:34.643"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:26.226" endtime="20230119 10:32:34.643"/>
+</test>
+<test id="s1-s13-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:32:34.644" endtime="20230119 10:32:37.192"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:34.644" endtime="20230119 10:32:37.193"/>
+</test>
+<status status="PASS" starttime="20230119 10:32:23.519" endtime="20230119 10:32:37.194"/>
+</suite>
+<suite id="s1-s14" name="TC BBC N Men 014" source="C:\Users\maham\OneDrive\Desktop\AE4TS_Final_Project\TS_BBC_05\TC_BBC_N_Men_014.robot">
+<test id="s1-s14-t1" name="Pre-conditions" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230119 10:32:37.200" level="INFO">Opening browser 'chrome' to base url 'https://www.bbc.com/news'.</msg>
+<status status="PASS" starttime="20230119 10:32:37.199" endtime="20230119 10:32:39.770"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:37.199" endtime="20230119 10:32:39.770"/>
+</test>
+<test id="s1-s14-t2" name="News_Menu_14" line="15">
+<kw name="TC_BBC_N_Men_014">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230119 10:32:39.771" endtime="20230119 10:32:39.771"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230119 10:32:39.771" endtime="20230119 10:32:40.393"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Do_not_consent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:40.393" level="INFO">Clicking element '//html/body/div[12]/div[2]/div[1]/div[2]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20230119 10:32:40.393" endtime="20230119 10:32:41.433"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${NoTakeMeToSettings}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:41.433" level="INFO">Clicking element '//*[@id="bbccookies-settings"]/a'.</msg>
+<status status="PASS" starttime="20230119 10:32:41.433" endtime="20230119 10:32:42.466"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>How can I change my BBC cookie settings?</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:32:43.671" level="INFO">Current page contains text 'How can I change my BBC cookie settings?'.</msg>
+<status status="PASS" starttime="20230119 10:32:42.466" endtime="20230119 10:32:43.671"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230119 10:32:43.671" endtime="20230119 10:32:44.767"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20230119 10:32:44.767" endtime="20230119 10:32:46.033"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${World_News_TV}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230119 10:32:46.033" level="INFO">Clicking element '//*[@id="orb-modules"]/header/div[2]/div/div[1]/nav/ul/li[14]'.</msg>
+<status status="PASS" starttime="20230119 10:32:46.033" endtime="20230119 10:32:47.696"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Featured programmes</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230119 10:32:48.712" level="INFO">Current page contains text 'Featured programmes'.</msg>
+<status status="PASS" starttime="20230119 10:32:47.696" endtime="20230119 10:32:48.712"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:39.771" endtime="20230119 10:32:48.712"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:39.770" endtime="20230119 10:32:48.712"/>
+</test>
+<test id="s1-s14-t3" name="Post-condicitions" line="18">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230119 10:32:48.713" endtime="20230119 10:32:51.266"/>
+</kw>
+<status status="PASS" starttime="20230119 10:32:48.713" endtime="20230119 10:32:51.266"/>
+</test>
+<status status="PASS" starttime="20230119 10:32:37.195" endtime="20230119 10:32:51.267"/>
+</suite>
+<status status="PASS" starttime="20230119 10:29:31.765" endtime="20230119 10:32:51.269"/>
+</suite>
+<statistics>
+<total>
+<stat pass="42" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="42" fail="0" skip="0" id="s1" name="TS BBC 05">TS BBC 05</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="TC BBC N Men 001">TS BBC 05.TC BBC N Men 001</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s2" name="TC BBC N Men 002">TS BBC 05.TC BBC N Men 002</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s3" name="TC BBC N Men 003">TS BBC 05.TC BBC N Men 003</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s4" name="TC BBC N Men 004">TS BBC 05.TC BBC N Men 004</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s5" name="TC BBC N Men 005">TS BBC 05.TC BBC N Men 005</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s6" name="TC BBC N Men 006">TS BBC 05.TC BBC N Men 006</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s7" name="TC BBC N Men 007">TS BBC 05.TC BBC N Men 007</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s8" name="TC BBC N Men 008">TS BBC 05.TC BBC N Men 008</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s9" name="TC BBC N Men 009">TS BBC 05.TC BBC N Men 009</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s10" name="TC BBC N Men 010">TS BBC 05.TC BBC N Men 010</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s11" name="TC BBC N Men 011">TS BBC 05.TC BBC N Men 011</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s12" name="TC BBC N Men 012">TS BBC 05.TC BBC N Men 012</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s13" name="TC BBC N Men 013">TS BBC 05.TC BBC N Men 013</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s14" name="TC BBC N Men 014">TS BBC 05.TC BBC N Men 014</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
